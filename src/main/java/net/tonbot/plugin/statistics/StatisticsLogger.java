@@ -3,8 +3,7 @@ package net.tonbot.plugin.statistics;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.tonberry.tonbot.common.PeriodicTask;
-
+import net.tonbot.common.PeriodicTask;
 import sx.blah.discord.api.IDiscordClient;
 
 class StatisticsLogger extends PeriodicTask {

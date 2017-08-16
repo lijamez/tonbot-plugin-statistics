@@ -6,9 +6,10 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
-import com.tonberry.tonbot.common.PeriodicTask;
-import com.tonberry.tonbot.common.TonbotPlugin;
-import com.tonberry.tonbot.common.TonbotPluginArgs;
+
+import net.tonbot.common.PeriodicTask;
+import net.tonbot.common.TonbotPlugin;
+import net.tonbot.common.TonbotPluginArgs;
 
 public class StatisticsPlugin extends TonbotPlugin {
 
