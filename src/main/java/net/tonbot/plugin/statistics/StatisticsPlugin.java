@@ -41,4 +41,10 @@ public class StatisticsPlugin extends TonbotPlugin {
 		return injector.getInstance(Key.get(new TypeLiteral<Set<PeriodicTask>>() {
 		}));
 	}
+
+	@Override
+	public Set<Object> getRawEventListeners() {
+		return injector.getInstance(Key.get(new TypeLiteral<Set<Object>>() {
+		}));
+	}
 }

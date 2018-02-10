@@ -14,7 +14,7 @@ import sx.blah.discord.api.IDiscordClient;
 
 class StatisticsModule extends AbstractModule {
 
-	private static final long PERIOD_MS = 300000;
+	private static final long PERIOD_MS = 300000; // Every 5 mins
 
 	private final String prefix;
 	private final IDiscordClient discordClient;
@@ -35,5 +35,11 @@ class StatisticsModule extends AbstractModule {
 		StatisticsLogger diagnosticsLogger = new StatisticsLogger(discordClient, PERIOD_MS);
 
 		return ImmutableSet.of(diagnosticsLogger);
+	}
+
+	@Provides
+	@Singleton
+	Set<Object> rawEventListeners(GuildListener guildListener) {
+		return ImmutableSet.of(guildListener);
 	}
 }
